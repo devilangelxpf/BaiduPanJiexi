@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         String id = getVid(url);
         firstGet(id);
         getPvid();
-        sencondGet(id);
+        secondGet(id);
     }
 
-    private void sencondGet(String id) {
+    private void secondGet(String id) {
         try {
             String secondUrl = "http://play.youku.com/play/get.json?vid=";//&ct=12
             URL url = new URL(secondUrl + id + "&ct=12");
